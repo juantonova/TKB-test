@@ -1,0 +1,15 @@
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: $blue;
+    display: flex;
+
+    &__input {
+        width: 400px;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        margin: auto;
+    }
+}

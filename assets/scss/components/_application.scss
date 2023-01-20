@@ -1,0 +1,59 @@
+.main {
+    width: 100%;
+}
+
+.applications {
+    width: 100%;
+    padding: 40px;
+    height: calc(100% - 120px);
+    &__table {
+        width: 100%;
+        min-width: 900px;
+        border-collapse:collapse;
+        td {
+            border: 1px $gray-border groove;
+            &>* {
+                width: calc(100% - 20px);
+                margin: 10px;
+            }
+        }
+        th {
+            height: 30px;
+        }
+    }
+
+
+    &__btn__apply {
+        background-color: $blue;
+        width: 180px;
+        height: 40px;
+        border: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    &__btn__apply:last-child {
+        float: right;
+    }
+
+    &__btn__delete {
+        background-color: $red;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    &__error {
+        color: $red;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
